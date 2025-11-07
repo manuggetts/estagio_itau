@@ -107,3 +107,29 @@ python main.py
 ##### O mapeamento de gerentes é tratado automaticamente pelo código.
 
 ##### A pasta outputs/ é criada automaticamente se não existir.
+
+---
+
+## 📚 Referências
+
+Esses artigos ajudaram a estruturar e aprimorar a solução:
+
+**Pandas – Guia Oficial**  
+🔗 https://pandas.pydata.org/docs/  
+Foi essencial para entender como manipular e limpar os dados do Excel, fazer agrupamentos (`groupby`) e exportar os resultados.
+
+**Matplotlib – Official Tutorial**  
+🔗 https://matplotlib.org/stable/tutorials/  
+Ajudou na criação do gráfico horizontal com customização de cores e rótulos, usado na função `gerar_grafico()`.
+
+**Real Python – Working With Excel Files in Python**  
+🔗 https://realpython.com/python-excel/  
+Mostra boas práticas para leitura e escrita de planilhas com `pandas` e `ExcelWriter`, exatamente o que foi aplicado na função `salvar_excel()`.
+
+**Python Docs – os.makedirs()**  
+🔗 https://docs.python.org/3/library/os.html#os.makedirs  
+Utilizado para criar automaticamente a pasta `outputs` caso ela não exista, evitando erros de execução.
+
+**Stack Overflow – Como remover espaços e padronizar colunas em Pandas**  
+🔗 https://stackoverflow.com/questions/36787809/  
+Base para o trecho que padroniza as colunas com `.strip().upper()`, garantindo consistência ao tratar dados vindos de planilhas diferentes.
